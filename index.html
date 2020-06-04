@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Enderal Lore (Github)</title>
+        <title>Enderal Lore</title>
         <link rel="icon" type="image/ico" href="enderal.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+        <link rel="stylesheet" type="text/css" href="socialMedia.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
@@ -27,6 +31,7 @@
                 padding: 20px 0px 0px 0px;
                 font-family: 'Fredericka the Great', cursive;
                 font-size: 180%;
+                color: rgb(65, 65, 65);
             }
 
             .jQuoteContainer {
@@ -93,37 +98,52 @@
                 margin: 0% 5% 0% 3%;
             }
 
-            a {
-                color: rgb(50, 50, 50);
-                text-decoration: none;
-            }
-
-            a:link {
+            .listLink:link {
                 color: rgb(50, 50, 50);
             }
 
-            a:visited {
+            .listLink:visited {
                 color: rgb(124, 124, 124);
             }
 
-            a:hover {
+            .listLink:hover {
                 text-decoration: underline;
             }
 
-            a:active {
+            .listLink:active {
                 color: orange;
+            }
+
+            .bLinkContainer{
+                position: absolute;
+                left: 90%;                
+            }
+
+            .myLink:visited {
+                color: white;
             }
         </style>
     </head>
 
     <body>
-        <div class="contentContainer">
-            <header class="pageTitle">
-                <h1 style="color: rgb(65, 65, 65)">Jespar Dal' Varek</h1>   
-            </header>
+        <div class="sMediaContainer">
+            <div class="sMedia">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <br>
+                <a href="https://twitter.com/home" target="_blank" class="fa fa-twitter"></a>
+                <br>
+                <a href="https://www.youtube.com/channel/UCYs0d-sWYVovx53qBi4gY-w?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+                <br>
+                <a href="https://www.reddit.com/" target="_blank" class="fa fa-reddit"></a>
+            </div>
+        </div>
 
+        <div class="contentContainer" id="car">
+            <header class="pageTitle">
+                <h1>Jespar Dal' Varek</h1>   
+            </header>
             <div class="jQuoteContainer">
-                <h2 style=" font-size: 150%; font-size: 150%; text-align: center;">"Nothing better than a good pipe and a nice sight to go along with it... 
+                <h2>"Nothing better than a good pipe and a nice sight to go along with it... 
                 it's always sad to see how few people can truly appreciate these things." <br>- Jespar Dal' Varek</h2>
             </div>
 
@@ -149,36 +169,41 @@
 
             <div class="listContainer">
                 <ul class="list">
-                    <li><strong><a href="https://en.wiki.sureai.net/Enderal:The_Void" target="_blank">The Void</a></strong> - You'll wake up be greeted by a man 
+                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Void" target="_blank">The Void</a></strong> - You'll wake up be greeted by a man 
                     who introduces himself as Jespar, and informs you that Finn and Carbos' camp was attacked, and you were the only survivor. He then goes on to 
                     explain that he works for The Holy Order, and that his employer can help treat your Enderal:Arcane Fever. However, Jespar wants you to help him 
                     first before bringing you to his employer.</li>
 
-                    <li><strong><a href="https://en.wiki.sureai.net/Enderal:The_First_Steps" target="_blank">The First Steps</a></strong> - "Joseph the Mercenary" 
+                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_First_Steps" target="_blank">The First Steps</a></strong> - "Joseph the Mercenary" 
                     will introduce you to Constantin Firespark, who will examine you. Firespark will send you off to find Lashiri, a Nehremese mage who can perform 
                     the ritual to control your magic. Jespar will give you the Every Day Like the Last, Part I quest after Firespark leaves.</li>
                     
-                    <li><strong><a href="https://en.wiki.sureai.net/Enderal:The_Word_of_the_Dead" target="_blank">The Word of The Dead</a></strong> - The archmagister 
+                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Word_of_the_Dead" target="_blank">The Word of The Dead</a></strong> - The archmagister 
                     will explain to you that to be able to enter the mind of the dead Pyrean, you will need to find an artifact called Word of the Dead, which is rumored 
                     to be in the hands of a collector called the Aged Man. The Grandmaster will warn you that no violent course of action should be taken against him, as 
                     even the Light-Born ordered The Order no not meddle in his affairs. The plan is to look for the artifact, teleport the dead Pyrean to the artifact, and 
                     then use it to enter the mind of the dead Pyrean, where you should look for the last words of the ritual.</li>
 
-                    <li><strong><a href="https://en.wiki.sureai.net/Enderal:Into_the_Deep" target="_blank">Into The Deep</a></strong> - This quest will begin automatically 
+                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:Into_the_Deep" target="_blank">Into The Deep</a></strong> - This quest will begin automatically 
                     after the end of Interlude. Constantine Firespark will tell you to meet him and Jespar Dal'Varek in Fogville, to search for the Sigil Gem that can open 
                     the door to the Crystal Temple. After fighting your way through a few Arps, you'll encounter Jespar and Firespark, who complains that you took too long 
                     to arrive. He'll then head for the temple and leave you with Jespar to search for the gem. Jespar will suggest that you search the Town Hall first.</li>
 
-                    <li><strong><a href="https://en.wiki.sureai.net/Enderal:The_Lion%27s_Den" target="_blank">The Lion's Den</a></strong> - This quest will begin automatically after the end of Into the Deep, when Jespar wakes 
+                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Lion%27s_Den" target="_blank">The Lion's Den</a></strong> - This quest will begin automatically after the end of Into the Deep, when Jespar wakes 
                     you up inside the Undertrain. Leave the train and you'll find yourself in a station very similar to the one you just left, plagued by various weak skeletal 
                     Lost Ones. Make your way through the calcium-filled foes and follow Jespar into the tropical Halfmoon Isle. As you near the Nehrimese camp, Jespar will 
                     stop you and give you your Silver Plate, suggesting that you split up to reduce the damage if any of you is caught.</li>
                 </ul>
             </div>
+
         </div>
     </body>
 
     <footer>
-       
+    <!--
+        <div class="bLinkContainer">
+            <a href="#car" class="myLink"><h6>Back to Top of Page</h6></a>
+        </div>
+    -->
     </footer>
 </html>
