@@ -28,33 +28,33 @@
 
 .fa:hover {
     opacity: 1;
-    background-image: url("purple.jpg");
+    background-image: url("metal1.jpg");
 }
-
+/*
 .fa:active {
     background-image: url("");
 }
-
+*/
 .fa-facebook {
     background: #49493b;
-    background-image: url("brass.jpg");
+    background-image: url("brass(edited).jpg");
     color: #fffbe4;
 }
 
 .fa-twitter {
     background: #49493b;
-    background-image: url("brass.jpg");
+    background-image: url("brass(edited).jpg");
     color: #fffbe4;
 }
 
 .fa-youtube {
     background: #49493b;
-    background-image: url("brass.jpg");
+    background-image: url("brass(edited).jpg");
     color: #fffbe4;
 }
 
 .fa-reddit {
     background: #49493b;
-    background-image: url("brass.jpg");
+    background-image: url("brass(edited).jpg");
     color: #fffbe4;
 }
