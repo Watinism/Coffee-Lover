@@ -1,3 +1,9 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .sMediaContainer {
     background-color: rgba(187, 187, 187, 0.2);
     border-radius: 10px;
@@ -21,25 +27,34 @@
 }
 
 .fa:hover {
-    opacity: .6;
+    opacity: 1;
+    background-image: url("purple.jpg");
+}
+
+.fa:active {
+    background-image: url("");
 }
 
 .fa-facebook {
     background: #49493b;
+    background-image: url("brass.jpg");
     color: #fffbe4;
 }
 
 .fa-twitter {
     background: #49493b;
+    background-image: url("brass.jpg");
     color: #fffbe4;
 }
 
 .fa-youtube {
     background: #49493b;
+    background-image: url("brass.jpg");
     color: #fffbe4;
 }
 
 .fa-reddit {
     background: #49493b;
+    background-image: url("brass.jpg");
     color: #fffbe4;
 }
