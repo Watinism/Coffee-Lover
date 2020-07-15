@@ -1,219 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" dir="ltr">
     <head>
-        <title>Enderal Lore (Github)</title>
-        <link rel="icon" type="image/ico" href="enderal.ico">
+        <title>My Project</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/ico" href="favicon.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-        <link rel="stylesheet" type="text/css" href="socialMedia.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
-
-        <style>
-
-            html {
-                background-image: url("background.jpg");
-            }
-
-            .contentContainer {
-                background-color: rgb(233, 233, 233);
-                border-radius: 10px;
-                margin: 2% 15% 30% 15%;
-                background-image: url("jbackground.jpg");
-                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-
-            .pageTitle {
-                text-align: center;
-                padding: 20px 0px 0px 0px;
-                font-family: 'Fredericka the Great', cursive;
-                font-size: 180%;
-                color: rgb(65, 65, 65);
-            }
-
-            .jQuoteContainer {
-                text-align: center;
-                font-family: 'News Cycle', cursive;
-                font-size: 115%;
-                color: rgb(94, 94, 94);
-                margin: 0% 4% 0% 4%;
-            }
-
-            .pText {
-                text-align: center;
-                color: rgb(80, 80, 80);
-                border-style: solid;
-                border-color: rgb(150, 150, 150);
-                border-width: 1px;
-                border-radius: 5px;
-                margin: 0% 5% 0% 5%;
-                padding: 0% 1% 0% 1%;
-                font-family: 'News Cycle', cursive;
-            }
-
-            .imageContainer {
-                text-align: center;
-                border-style: solid;
-                border-color: rgb(150, 150, 150);
-                border-width: 1px;
-                border-radius: 5px;
-                margin: 2% 5% 0% 5%;
-                padding: 10px;
-            }
-
-            .jesparImage {
-                text-align: center;
-                border-radius: 100%;
-                border-style: solid;
-                border-width: 4px;
-                border-color: rgb(70, 70, 70)
-            }
-
-            .imageText {
-                background-color: rgb(230, 230, 230);
-                font-family: 'News Cycle', cursive;
-                color: rgb(54, 54, 54);
-                margin: 0% 0% 0% 0%;
-                padding: .5%;
-                border-radius: 5px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            }
-
-            .listTitle {
-                font-family: 'News Cycle, cursive';
-                color: rgb(61, 61, 61);
-                text-align: center;
-                margin: 5% 0% 0% 0%;
-            }
-
-            .listContainer {
-                padding: 0% 0% 5% 0%;
-            }
-
-            .list {
-                line-height: 1.6;
-                font-family: 'News Cycle', cursive;
-                color:rgb(61, 61, 61);
-                margin: 0% 5% 0% 3%;
-            }
-
-            .listLink {
-                text-decoration: none;
-            }
-
-            .listLink:link {
-                color: rgb(50, 50, 50);
-            }
-
-            .listLink:visited {
-                color: rgb(124, 124, 124);
-            }
-
-            .listLink:hover {
-                text-decoration: underline;
-            }
-
-            .listLink:active {
-                color: orange;
-            }
-        /*
-            .bLinkContainer{
-                position: absolute;
-                left: 90%;                
-            }
-
-            .myLink:visited {
-                color: white;
-            }
-        */
-        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class="sticky">
-            <div class="sMediaContainer">
-                <div class="sMedia" style="font-size: 25px;">
-                    <a href="https://www.facebook.com/SureAI" target="_blank" class="fa fa-facebook"></a>
-                    <br>
-                    <a href="https://twitter.com/SureAITeam" target="_blank" class="fa fa-twitter"></a>
-                    <br>
-                    <a href="https://www.youtube.com/watch?v=_DHkmHBPs2Q" target="_blank" class="fa fa-youtube"></a>
-                    <br>
-                    <a href="https://www.reddit.com/r/enderal/" target="_blank" class="fa fa-reddit"></a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 20px;">
+            <a class="navbar-brand" href="#">Welcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="sign up.html">Sign In <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
             </div>
-        </div>
+          </nav>
 
-        <div class="contentContainer" id="car">
-            <header class="pageTitle">
-                <h1>Jespar Dal' Varek</h1>   
-            </header>
-            <div class="jQuoteContainer">
-                <h2>"Nothing better than a good pipe and a nice sight to go along with it... 
-                it's always sad to see how few people can truly appreciate these things." <br>- Jespar Dal' Varek</h2>
+
+
+
+          <div class="container">
+            <div class="jumbotron box-shadow nav-sticky">
+                <h1 class="display-4">Coffee Lover Project</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium quibusdam, possimus quas, corporis impedit suscipit facere maiores dolorem, voluptatum ab itaque minima esse atque! Beatae reiciendis adipisci officiis! Blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero maxime sint illum laboriosam omnis dolorem, nostrum quidem quam temporibus laborum fugit reiciendis esse minima porro deserunt ea accusamus non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quos! In culpa nisi vel eos obcaecati, tempore veniam recusandae possimus quis enim eum numquam odit architecto aut earum at aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quod necessitatibus eum dolor libero minima ipsam? Pariatur eos, et odio esse laboriosam voluptatibus recusandae culpa a vitae corporis aut neque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab quam voluptatem recusandae magnam totam cumque at ut quisquam molestias esse illum incidunt corporis molestiae iusto repellat, reprehenderit hic fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, temporibus? Dicta minima eveniet maxime, tenetur qui hic vitae, porro doloribus accusantium, id molestias iure! Exercitationem architecto dolore dolor harum possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, velit. In odit animi nisi magni id minus, tempora labore adipisci ea facilis laudantium corporis voluptatem doloremque saepe optio aliquam dignissimos.</p>
             </div>
+          </div>
 
-            <div class="pText">
-                <p>Jespar Mitumial Dal'Varek is a mercenary originally employed by Constantine Firespark to look into Magister Yero's life. He is one of the 
-                two romance options, the other being Calia Sakaresh. The Prophet is introduced to Jespar when he saves them after the bandit attack against Finn 
-                and Carbos. He determines that the Prophet is suffering from Arcane Fever and that they should speak to his employer, The Holy Order, in exchange 
-                for helping him complete his current job. Jespar is continually employed by The Holy Order and joins the Prophet on several quests. If the player 
-                has a higher affinity with him than with Calia Sakaresh or if he is romanced, he will accompany the player on the final quest. He can usually be 
-                found at the Drunken Nomad tavern in the Foreign Quarter of Ark.</p>
-            </div>
-
-            <div class="imageContainer">
-                <img class="jesparImage" src="jespar.jpg" alt="Picture of Jespar" width="400" height="517.5">
-                <div class="imageText">
-                    <p>A fanmade portrait of Jespar</p>
-                </div>
-            </div>
-
-            <div class="listTitle">
-                <h2>The following list consists of a few quests relating to Jespar</h2>
-            </div>
-
-            <div class="listContainer">
-                <ul class="list">
-                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Void" target="_blank">The Void</a></strong> - You'll wake up be greeted by a man 
-                    who introduces himself as Jespar, and informs you that Finn and Carbos' camp was attacked, and you were the only survivor. He then goes on to 
-                    explain that he works for The Holy Order, and that his employer can help treat your Enderal:Arcane Fever. However, Jespar wants you to help him 
-                    first before bringing you to his employer.</li>
-
-                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_First_Steps" target="_blank">The First Steps</a></strong> - "Joseph the Mercenary" 
-                    will introduce you to Constantin Firespark, who will examine you. Firespark will send you off to find Lashiri, a Nehremese mage who can perform 
-                    the ritual to control your magic. Jespar will give you the Every Day Like the Last, Part I quest after Firespark leaves.</li>
-                    
-                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Word_of_the_Dead" target="_blank">The Word of The Dead</a></strong> - The archmagister 
-                    will explain to you that to be able to enter the mind of the dead Pyrean, you will need to find an artifact called Word of the Dead, which is rumored 
-                    to be in the hands of a collector called the Aged Man. The Grandmaster will warn you that no violent course of action should be taken against him, as 
-                    even the Light-Born ordered The Order no not meddle in his affairs. The plan is to look for the artifact, teleport the dead Pyrean to the artifact, and 
-                    then use it to enter the mind of the dead Pyrean, where you should look for the last words of the ritual.</li>
-
-                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:Into_the_Deep" target="_blank">Into The Deep</a></strong> - This quest will begin automatically 
-                    after the end of Interlude. Constantine Firespark will tell you to meet him and Jespar Dal'Varek in Fogville, to search for the Sigil Gem that can open 
-                    the door to the Crystal Temple. After fighting your way through a few Arps, you'll encounter Jespar and Firespark, who complains that you took too long 
-                    to arrive. He'll then head for the temple and leave you with Jespar to search for the gem. Jespar will suggest that you search the Town Hall first.</li>
-
-                    <li><strong><a class="listLink" href="https://en.wiki.sureai.net/Enderal:The_Lion%27s_Den" target="_blank">The Lion's Den</a></strong> - This quest will begin automatically after the end of Into the Deep, when Jespar wakes 
-                    you up inside the Undertrain. Leave the train and you'll find yourself in a station very similar to the one you just left, plagued by various weak skeletal 
-                    Lost Ones. Make your way through the calcium-filled foes and follow Jespar into the tropical Halfmoon Isle. As you near the Nehrimese camp, Jespar will 
-                    stop you and give you your Silver Plate, suggesting that you split up to reduce the damage if any of you is caught.</li>
-                </ul>
-            </div>
-
-        </div>
+          <div class="container">
+            <h2>Pictures of Coffee</h2>
+              <div class="row no-gutters">
+                  <div class="col-lg-4 col-6"><img src="coffee1.jpg" alt="coffee1" class="img-thumbnail"></div>
+                  <div class="col-lg-4 col-6"><img src="coffee2.jpg" alt="coffee2" class="img-thumbnail"></div>
+                  <div class="col-lg-4 col-6"><img src="coffee3.jpg" alt="coffee3" class="img-thumbnail"></div>
+                  <div class="col-lg-4 col-6"><img src="coffee4.jpg" alt="coffee1" class="img-thumbnail"></div>
+                  <div class="col-lg-4 col-6"><img src="coffee5.jpg" alt="coffee2" class="img-thumbnail"></div>
+                  <div class="col-lg-4 col-6"><img src="coffee6.jpg" alt="coffee3" class="img-thumbnail"></div>
+              </div>
+          </div>
     </body>
-
-    <footer>
-    <!--
-        <div class="bLinkContainer">
-            <a href="#car" class="myLink"><h6>Back to Top of Page</h6></a>
-        </div>
-    -->
-    </footer>
 </html>

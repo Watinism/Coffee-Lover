@@ -1,0 +1,12 @@
+.boxy {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+.box-shadow {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.nav-sticky {
+    margin-top: 80px;
+}
